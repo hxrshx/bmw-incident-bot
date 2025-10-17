@@ -1,4 +1,5 @@
 import { AlertCircle, TrendingUp, BarChart3, Package, Users, Settings } from "lucide-react";
+import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import { Badge } from "@/components/ui/badge";
 
@@ -96,9 +97,10 @@ const DepartmentSummary = () => {
           {departments.map((dept) => {
             const Icon = dept.icon;
             return (
-              <div
+              <Link
                 key={dept.name}
-                className="bg-card rounded-lg shadow-lg border border-border overflow-hidden hover:shadow-xl transition-shadow"
+                to={`/department/${dept.name.toLowerCase()}`}
+                className="bg-card rounded-lg shadow-lg border border-border overflow-hidden hover:shadow-xl transition-shadow block"
               >
                 <div className="bg-primary p-6">
                   <div className="flex items-center gap-3 text-primary-foreground">
@@ -166,7 +168,7 @@ const DepartmentSummary = () => {
                     </p>
                   </div>
                 </div>
-              </div>
+              </Link>
             );
           })}
         </div>

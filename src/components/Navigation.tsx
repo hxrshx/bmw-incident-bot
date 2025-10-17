@@ -1,6 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import bmwLogo from "@/assets/bmw_logo.svg";
-import thwsLogo from "@/assets/thws_logo.avif";
+import thwsLogo from "@/assets/thws_logo.png";
 
 const Navigation = () => {
   const location = useLocation();
