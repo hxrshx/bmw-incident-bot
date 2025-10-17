@@ -100,7 +100,7 @@ const DepartmentSummary = () => {
               <Link
                 key={dept.name}
                 to={`/department/${dept.name.toLowerCase()}`}
-                className="bg-card rounded-lg shadow-lg border border-border overflow-hidden hover:shadow-xl transition-shadow block"
+                className="bg-card rounded-lg shadow-lg border border-border overflow-hidden hover:shadow-xl hover:scale-105 transition-all duration-200 block"
               >
                 <div className="bg-primary p-6">
                   <div className="flex items-center gap-3 text-primary-foreground">
